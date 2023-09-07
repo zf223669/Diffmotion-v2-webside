@@ -29,6 +29,7 @@ body {
 
 
 .publication-title {
+
 }
 
 .publication-banner {
@@ -154,4 +155,12 @@ body {
 }
 #interpolation-image-wrapper img {
   border-radius: 5px;
+}
+.title{
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.section-movie{
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
