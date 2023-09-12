@@ -58,26 +58,26 @@
       </span>
       </a>
 
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a>
-        </div>
-      </div>
-    </div>
+<!--      <div class="navbar-item has-dropdown is-hoverable">-->
+<!--        <a class="navbar-link">-->
+<!--          More Research-->
+<!--        </a>-->
+<!--        <div class="navbar-dropdown">-->
+<!--          <a class="navbar-item" href="https://hypernerf.github.io">-->
+<!--            HyperNeRF-->
+<!--          </a>-->
+<!--          <a class="navbar-item" href="https://nerfies.github.io">-->
+<!--            Nerfies-->
+<!--          </a>-->
+<!--          <a class="navbar-item" href="https://latentfusion.github.io">-->
+<!--            LatentFusion-->
+<!--          </a>-->
+<!--          <a class="navbar-item" href="https://photoshape.github.io">-->
+<!--            PhotoShape-->
+<!--          </a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
 
   </div>
 </nav>
@@ -269,18 +269,12 @@
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+<!--        <h2 class="title is-3">Abstract</h2>-->
         <div class="content has-text-justified">
-          <p>
-            Speech-driven gesture generation is an emerging field within the virtual human creation.
-          </p>
-          <p>
-            A significant challenge in achieving natural and personalized co-speech gestures lies in establishing appropriate input conditions and effectively performing multimodal operations. Previous research involves separate extraction of acoustic and semantic from speech audio and transcripts, aiming to synchronize gestures with the rhythm of spoken words. Additionally, it heavily relies on manual classification labels for personalized motions. However, these methods are constrained to predefined discrete styles and necessitate complex multimodal processing.
-            To address these problems, we present diffmotion-v2, an extension of our previous work called Diffmotion. This innovative approach combines a probabilistic diffusion-based non-autoregressive transformer model with an automatic conditional feature extractor mechanism, excelling at generating realistic and individual gestures solely from raw speech audio. Specifically,  we introduce a conditional extractor that leverages the WavLM large-scale pre-trained model to extract both local and global audio features. The local extractor focuses on acoustic and semantic, while the global extractor identifies broader sequence states such as emotion, personality traits, and subtle unidentified features. All the features are automatically and simultaneously extracted, eliminating the need for manual annotation and detailed multimodal processing. Moreover, we adapt an adaptive layer norm to enhance the modelling of the intricate relationship between speech and gestures.
-          </p>
-          <p>
-            This approach enables inference through a diffusion mechanism resulting in diverse gesture generation. Extensive subjective evaluations conducted on the Trinity, ZEGGS, and BEAT datasets demonstrate that our method outperforms recent approaches, especially in terms of convenience and output diversity.
-          </p>
+<!--          <p>-->
+<!--            Speech-driven gesture generation is an emerging field within the virtual human creation.-->
+<!--          </p>-->
+
         </div>
       </div>
     </div>
@@ -969,7 +963,7 @@
       </div>
     </section>
     <!-- movie-ZEGGS. -->
-    <h2 class="title">Tri</h2>
+    <h2 class="title">Trinity</h2>
     <!-- movie-tri. -->
 <section class="section-movie">
   <div class="container is-max-desktop">
@@ -1106,112 +1100,112 @@
     </section>
 <!-- movie-tri. -->
     <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
+<!--    <div class="columns is-centered">-->
+<!--      <div class="column is-full-width">-->
+<!--        <h2 class="title is-3">Animation</h2>-->
 
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/>
-        <!--/ Interpolating. -->
+<!--        &lt;!&ndash; Interpolating. &ndash;&gt;-->
+<!--        <h3 class="title is-4">Interpolating states</h3>-->
+<!--        <div class="content has-text-justified">-->
+<!--          <p>-->
+<!--            We can also animate the scene by interpolating the deformation latent codes of two input-->
+<!--            frames. Use the slider here to linearly interpolate between the left frame and the right-->
+<!--            frame.-->
+<!--          </p>-->
+<!--        </div>-->
+<!--        <div class="columns is-vcentered interpolation-panel">-->
+<!--          <div class="column is-3 has-text-centered">-->
+<!--            <img src="./static/images/interpolate_start.jpg"-->
+<!--                 class="interpolation-image"-->
+<!--                 alt="Interpolate start reference image."/>-->
+<!--            <p>Start Frame</p>-->
+<!--          </div>-->
+<!--          <div class="column interpolation-video-column">-->
+<!--            <div id="interpolation-image-wrapper">-->
+<!--              Loading...-->
+<!--            </div>-->
+<!--            <input class="slider is-fullwidth is-large is-info"-->
+<!--                   id="interpolation-slider"-->
+<!--                   step="1" min="0" max="100" value="0" type="range">-->
+<!--          </div>-->
+<!--          <div class="column is-3 has-text-centered">-->
+<!--            <img src="./static/images/interpolate_end.jpg"-->
+<!--                 class="interpolation-image"-->
+<!--                 alt="Interpolation end reference image."/>-->
+<!--            <p class="is-bold">End Frame</p>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <br/>-->
+<!--        &lt;!&ndash;/ Interpolating. &ndash;&gt;-->
 
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Re-rendering. -->
+<!--        &lt;!&ndash; Re-rendering. &ndash;&gt;-->
+<!--        <h3 class="title is-4">Re-rendering the input video</h3>-->
+<!--        <div class="content has-text-justified">-->
+<!--          <p>-->
+<!--            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel-->
+<!--            viewpoint such as a stabilized camera by playing back the training deformations.-->
+<!--          </p>-->
+<!--        </div>-->
+<!--        <div class="content has-text-centered">-->
+<!--          <video id="replay-video"-->
+<!--                 controls-->
+<!--                 muted-->
+<!--                 preload-->
+<!--                 playsinline-->
+<!--                 width="75%">-->
+<!--            <source src="./static/videos/replay.mp4"-->
+<!--                    type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--        &lt;!&ndash;/ Re-rendering. &ndash;&gt;-->
 
-      </div>
-    </div>
-    <!--/ Animation. -->
-
-
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Concurrent Work. -->
-
-  </div>
-</section>
+<!--      </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash;/ Animation. &ndash;&gt;-->
 
 
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
-}</code></pre>
-  </div>
-</section>
+<!--    &lt;!&ndash; Concurrent Work. &ndash;&gt;-->
+<!--    <div class="columns is-centered">-->
+<!--      <div class="column is-full-width">-->
+<!--        <h2 class="title is-3">Related Links</h2>-->
+
+<!--        <div class="content has-text-justified">-->
+<!--          <p>-->
+<!--            There's a lot of excellent work that was introduced around the same time as ours.-->
+<!--          </p>-->
+<!--          <p>-->
+<!--            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.-->
+<!--          </p>-->
+<!--          <p>-->
+<!--            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>-->
+<!--            both use deformation fields to model non-rigid scenes.-->
+<!--          </p>-->
+<!--          <p>-->
+<!--            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>-->
+<!--          </p>-->
+<!--          <p>-->
+<!--            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.-->
+<!--          </p>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash;/ Concurrent Work. &ndash;&gt;-->
+
+<!--  </div>-->
+<!--</section>-->
+
+
+<!--<section class="section" id="BibTeX">-->
+<!--  <div class="container is-max-desktop content">-->
+<!--    <h2 class="title">BibTeX</h2>-->
+<!--    <pre><code>@article{park2021nerfies,-->
+<!--  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},-->
+<!--  title     = {Nerfies: Deformable Neural Radiance Fields},-->
+<!--  journal   = {ICCV},-->
+<!--  year      = {2021},-->
+<!--}</code></pre>-->
+<!--  </div>-->
+<!--</section>-->
 
 
 <footer class="footer">
