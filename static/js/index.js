@@ -1,31 +1,3 @@
-// 1. 导入Plyr的JS和CSS
-import '/path/to/plyr.js';
-import '/path/to/plyr.css';
-
-// 2. 初始化Plyr播放器,不传视频源
-const player = new Plyr('#interpolation-video', {
-    source: null
-});
-
-// 3. 懒加载逻辑
-let observer = new IntersectionObserver(entries => {
-    if(entries[0].isIntersecting) {
-        // 设置视频源
-        player.source = {
-            type: 'video',
-            sources: [
-                {
-                    src: 'video.mp4',
-                    type: 'video/mp4'
-                }
-            ]
-        };
-    }
-});
-
-observer.observe(document.querySelector('#interpolation-video'));
-window.HELP_IMPROVE_VIDEOJS = false;
-
 var INTERP_BASE = "./static/interpolation/stacked";
 var NUM_INTERP_FRAMES = 240;
 
